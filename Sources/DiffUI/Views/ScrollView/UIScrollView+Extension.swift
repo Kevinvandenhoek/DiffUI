@@ -5,6 +5,7 @@
 //  Created by Kevin van den Hoek on 12/12/2020.
 //
 
+#if os(iOS) || os(tvOS)
 import EasyPeasy
 
 enum ScrollViewToScreenPosition {
@@ -151,3 +152,4 @@ private extension UIScrollView {
         }
     }
 }
+#endif

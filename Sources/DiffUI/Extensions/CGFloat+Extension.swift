@@ -5,6 +5,7 @@
 //  Created by Kevin van den Hoek on 12/12/2020.
 //
 
+#if os(iOS) || os(tvOS)
 import Foundation
 
 public extension CGFloat {
@@ -23,3 +24,4 @@ extension CGFloat: DFVectorRepresentable {
         return vector[0]
     }
 }
+#endif

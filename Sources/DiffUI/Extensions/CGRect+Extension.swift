@@ -5,6 +5,7 @@
 //  Created by Kevin van den Hoek on 12/12/2020.
 //
 
+#if os(iOS) || os(tvOS)
 import CoreGraphics
 
 extension CGRect: DFVectorRepresentable {
@@ -73,3 +74,4 @@ extension CGRect: DFVectorRepresentable {
         )
     }
 }
+#endif

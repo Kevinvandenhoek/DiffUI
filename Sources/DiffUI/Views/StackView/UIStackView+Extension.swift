@@ -5,6 +5,7 @@
 //  Created by Kevin van den Hoek on 12/12/2020.
 //
 
+#if os(iOS) || os(tvOS)
 import Foundation
 import UIKit
 
@@ -136,3 +137,4 @@ extension UIStackView: DFVisibilityAnimatable {
         arrangedSubviews.set(visible: visible, animated: animated)
     }
 }
+#endif

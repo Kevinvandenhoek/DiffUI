@@ -5,6 +5,7 @@
 //  Created by Kevin van den Hoek on 12/12/2020.
 //
 
+#if os(iOS) || os(tvOS)
 import CoreGraphics
 
 // Objects that are representable as a 'vector' with n dimensions, which would be an array of floating points.
@@ -164,3 +165,4 @@ private extension DFVectorRepresentable {
         return sqrt(distance)
     }
 }
+#endif

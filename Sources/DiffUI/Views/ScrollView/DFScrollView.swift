@@ -5,6 +5,7 @@
 //  Created by Kevin van den Hoek on 12/12/2020.
 //
 
+#if os(iOS) || os(tvOS)
 import Foundation
 import UIKit
 import EasyPeasy
@@ -188,3 +189,4 @@ public extension DFScrollView {
         }
     }
 }
+#endif

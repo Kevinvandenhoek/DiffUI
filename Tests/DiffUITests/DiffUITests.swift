@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import XCTest
 @testable import DiffUI
 
@@ -13,3 +14,4 @@ final class DiffUITests: XCTestCase {
         ("testExample", testExample),
     ]
 }
+#endif
