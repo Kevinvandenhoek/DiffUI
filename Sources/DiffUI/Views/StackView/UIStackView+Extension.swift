@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIStackView {
+public extension UIStackView {
     
     func removeArrangedSubviews() {
         arrangedSubviews.forEach({
