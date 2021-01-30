@@ -91,7 +91,7 @@ public extension UIStackView {
         }
     }
     
-    convenience init(axis: NSLayoutConstraint.Axis = .vertical, spacing: CGFloat = 0, elements: [Element] = []) {
+    convenience init(_ axis: NSLayoutConstraint.Axis = .vertical, spacing: CGFloat = 0, elements: [Element] = []) {
         self.init()
         self.axis = axis
         self.spacing = spacing

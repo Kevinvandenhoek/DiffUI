@@ -151,7 +151,7 @@ private extension DFScrollView {
     }
     
     func makeStackView() -> UIStackView {
-        let stackView = UIStackView(axis: axis, spacing: 0, elements: views)
+        let stackView = UIStackView(axis, spacing: 0, elements: views)
         return stackView
     }
 }
