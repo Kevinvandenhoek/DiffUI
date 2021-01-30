@@ -7,6 +7,7 @@
 
 #if os(iOS) || os(tvOS)
 import EasyPeasy
+import UIKit
 
 enum ScrollViewToScreenPosition {
     case top
