@@ -31,7 +31,7 @@ public extension UIView {
     }
     
     func fill(with view: UIView, insets: UIEdgeInsets = .zero) {
-        self.setSubviews(view)
+        addSubview(view)
         view.easy.layout(Edges(insets))
     }
     
