@@ -13,8 +13,8 @@ import EasyPeasy
 open class DFScrollView: UIScrollView, UpdatableView {
     
     // MARK: Open properties
-    open var axis: DFAxis = .vertical {
-        didSet { stackView.axis = axis; easy.reload() }
+    open var axis: DFAxis = .horizontal {
+        didSet { stackView.axis = axis; viewContainer.easy.reload() }
     }
     open var views: [View] = [] {
         didSet { stackView.set(elements: views) }
