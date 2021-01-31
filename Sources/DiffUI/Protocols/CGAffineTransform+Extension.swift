@@ -7,7 +7,7 @@
 
 import CoreGraphics
 
-extension CGAffineTransform {
+public extension CGAffineTransform {
     
     static func scaled(by point: CGPoint) -> CGAffineTransform {
         return CGAffineTransform.identity.scaledBy(x: point.x, y: point.y)
