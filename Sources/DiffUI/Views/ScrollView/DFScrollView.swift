@@ -14,7 +14,7 @@ open class DFScrollView: UIScrollView, UpdatableView {
     
     // MARK: Open properties
     open var axis: DFAxis = .vertical {
-        didSet { easy.reload() }
+        didSet { stackView.axis = axis; easy.reload() }
     }
     open var views: [View] = [] {
         didSet { stackView.set(elements: views) }
